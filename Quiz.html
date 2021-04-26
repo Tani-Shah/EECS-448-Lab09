@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Quiz
+    </title>
+    <style>
+        body{
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <p style="font-size: 25px; text-align: center;">EECS 448 Quiz!<br>
+    <span style="font-size: 12px">Some questions can be found in the Software Development Phases Lecture</span></span>
+    <form action="./Quiz.php" method="post">
+        <p class = "Questions">
+            <label for="Battleship">Question 1: What was the game we were required to build in the first project?</label><br>
+            <input type="radio" name="Battleship" id = "Connect 4" value = "Connect 4">
+            <label for ="Connect 4">Connect 4</label><br>
+            <input type="radio" name="Battleship" id = "Battleship" value = "Battleship">
+            <label for ="Battleship">Battleship</label><br>
+            <input type="radio" name="Battleship" id = "Space Invaders" value = "Space Invaders">
+            <label for ="Space Invaders">Space Invaders</label><br>
+            <input type="radio" name="Battleship" id = "Flappy Bird" value = "Flappy Bird">
+            <label for ="Flappy Bird">Flappy Bird</label><br>
+        </p>
+        <p class = "Questions">
+            <label for="AI">Question 2: What was the custom addition to the game required by all teams for project 2?</label><br>
+            <input type="radio" name="AI" id = "Sound Effects" value = "Sound Effects">
+            <label for ="Sound Effects">Sound Effects</label><br>
+            <input type="radio" name="AI" id = "Supershots" value = "Supershots">
+            <label for ="Supershots">Supershots</label><br>
+            <input type="radio" name="AI" id = "AI Opponent" value = "AI Opponent">
+            <label for ="AI Opponent">AI Opponent</label><br>
+            <input type="radio" name="AI" id = "Visual Effects" value = "Visual Effects">
+            <label for ="Visual Effects">Visual Effects</label><br>
+        </p>
+        <p class = "Questions">
+            <label for="Design">Question 3: What is the third stage in Design life-cyle model?</label><br>
+            <input type="radio" name="Design" id = "Analysis" value = "Analysis">
+            <label for ="Analysis">Analysis</label><br>
+            <input type="radio" name="Design" id = "Implementation" value = "Implementation">
+            <label for ="Implementation">Implementation</label><br>
+            <input type="radio" name="Design" id = "Requirements" value = "Requirements">
+            <label for ="Requirements">Requirements</label><br>
+            <input type="radio" name="Design" id = "Design" value = "Design">
+            <label for ="Design">Design</label><br>
+        </p>
+        <p class = "Questions">
+            <label for="Incrementation">Question 4: What does it mean to construct an artifact piece-by-piece?</label><br>
+            <input type="radio" name="Incrementation" id = "Incrementation" value = "Incrementation">
+            <label for ="Incrementation">Incrementation</label><br>
+            <input type="radio" name="Incrementation" id = "Implementation" value = "Implementation">
+            <label for ="Implementation">Implementation</label><br>
+            <input type="radio" name="Incrementation" id = "Iteration" value = "Iteration">
+            <label for ="Iteration">Iteration</label><br>
+            <input type="radio" name="Incrementation" id = "Test" value = "Test">
+            <label for ="Test">Test</label><br>
+        </p>
+        <p class = "Questions">
+            <label for="60">Question 5: What is the percentage of effort devoted to implementation and testing workflows in iteration and incrementation?</label><br>
+            <input type="radio" name="60" id = "20" value = "20">
+            <label for ="20">20</label><br>
+            <input type="radio" name="60" id = "40" value = "40">
+            <label for ="40">40</label><br>
+            <input type="radio" name="60" id = "60" value = "60">
+            <label for ="60">60</label><br>
+            <input type="radio" name="60" id = "80" value = "80">
+            <label for ="80">80</label><br>
+        </p>
+        <button id="check">Submit Quiz</button>
+    </form>
+</body>

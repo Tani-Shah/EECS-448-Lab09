@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Web Store</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="body">
+		<p>
+			<h1 style="background: darkturquoise;">Web Store!</h1>
+			<div class = "row">
+			<div class="column"><img src="./webStore/1.jpg" style="max-width: 200px;"/>
+					<h4>Brush Pen - $5/word</h4></div>
+			<div class="column">	<img src="./webStore/2.jpg" style="max-width: 200px;"/>
+					<h4>Focus - $10</h4></div>
+			<div class="column">	<img src="./webStore/3.jpg" style="max-width: 200px;"/>
+					<h4>Consistency - $10</h4></div>
+			<div class="column">	<img src="./webStore/4.jpg" style="max-width: 200px;"/>
+					<h4>Commitment - $20</h4></div>
+			<div class="column">	<img src="./webStore/5.jpg" style="max-width: 200px;"/>
+					<h4>Intentional - $10</h4></div>
+			<div class="column">	<img src="./webStore/6.jpg" style="max-width: 200px;"/>
+					<h4>Pointed Pen - $10/word</h4></div>
+			</div>
+		</div>
+		</p>
+		<p></p>
+		<div class = "row">
+		<form name="Form" action="customerBackend.php" method="post">
+			<div id="login" style="background: darkturquoise;"><b>Information:</b><br>
+				Username: <input type="email" id="username" name="username" required><br>
+				Password: <input type="password" id="password" name="password" minlength="8" required><br>
+			</div><br>
+			<div style="background: darkturquoise;"><b>Item Quantities:<br></b>
+				Brush Pen [Words]: <input type="number" value="0" id="number" name="brushPen" min="0" onchange="cost()" width = "25px"><br>
+				Focus: <input type="number" value="0" id="number" name="focus" min="0" onchange="cost()"><br>
+				Consistency: <input type="number" value="0" id="number" name="consistency" min="0" onchange="cost()"><br>
+				Commitment: <input type="number" value="0" id="number" name="commitment" min="0" onchange="cost()"><br>
+				Intentional: <input type="number" value="0"  id="number" name="intentional" min="0" onchange="cost()"><br>
+				Pointed Pen [Words]: <input type="number" value="0"  id="number" name="pointedPen" min="0" onchange="cost()"><br>
+			</div><br>
+			<div id="shipping" style="background: darkturquoise;"><b>Shipping Time:<br></b>
+				<input type="radio" value="free" name="shipping" checked id="free" required onchange="shipping(); cost()">
+				<label for="free">Free 7 day</label><br>
+				<input type="radio" value="overNight" name="shipping" id="overNight" onchange="shipping(); cost()">
+				<label for="overNight">$50.00 over night</label><br>
+				<input type="radio" value="threeDay" name="shipping" id="threeDay" onchange="shipping(); cost()">
+				<label for="threeDay">$5.00 three days</label><br>
+			</div><br>
+			 <button type="submit" onClick="return validateForm()">Checkout</button>
+			 <button onClick="reset()">Reset</button><br><br>
+	   </form>
+	</div>
+	<script src="formChecker.js"></script>
+</body>
+</html>

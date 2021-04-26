@@ -1,0 +1,41 @@
+.column {
+    float: left;
+    width: 15%;
+    padding: 2px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body{
+    font-family: cursive;
+    text-align: center;
+}
+
+form div {
+    text-align: left;
+}
+
+form {
+    text-align: left;
+} 
+
+#number{
+    width: 3em;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+  
+th{
+    background-color: cyan;
+}
+  
+td{
+    background-color: plum;
+}
